@@ -1,49 +1,26 @@
-import { useState } from "react";
-import reactLogo from "/assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
-
-function Header() {
-  return (
-      <header>
-          <nav>
-              <img src="./react-logo.png" width="40px" />
-          </nav>
-      </header>
-  )
-}
-
-function Page() {
-  return (
-      <div>
-          <Header />
-          <h1>Reasons I'm excited to learn React</h1>
-          <ol>
-              <li>It's a popular library, so I'll be 
-              able to fit in with the cool kids!</li>
-              <li>I'm more likely to get a job as a developer
-              if I know React</li>
-          </ol>
-          <footer>
-              <small>© 2021 Ziroll development. All rights reserved.</small>
-          </footer>
-      </div>
-  )
-}
-
 function App() {
   return (
-    <>
-    <Page/>
-      <h1>Fun facts about React</h1>
-      <img src="/assets/clouds.jpg" alt="" width={"200px"} height={"200px"}/>
-      <ul>
-        <li>was first released in 2013</li>
-        <li>was originaly created by Jordan walke</li>
-        <li>Has well over 100k stars on Github</li>
-      </ul>
-    </>
+    <div className="bg-red">
+      <div className="w-[40%] m-auto">
+        <div className=" bg-[#21222A] ">
+          <img src="/assets/header.png" alt="" />
+        </div>
+        <div className="bg-[#282D35] py-10 bg-[url('assets/reactjs-icon2.png')]">
+          <div className="w-[90%] mx-auto  text-white">
+            <h2 className=" text-4xl font-bold">Fun facts about React</h2>
+            <ul className="list-disc list-inside marker:text-blue-300 marker:text-2xl">
+              <li>Was first released in 2013</li>
+              <li>Was originally created by Jordan Walke</li>
+              <li>Has well over 100K stars on GitHub</li>
+              <li>Is maintained by Meta</li>
+              <li>
+                Powers thousands of enterprise apps, including mobile apps
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
